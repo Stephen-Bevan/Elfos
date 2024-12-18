@@ -29,7 +29,7 @@ TEMPLATES_DIR = os.path.join(BASE_DIR,'templates')
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
     '8000-stephenbevan-elfos-m1wo3xb9nv2.ws.codeinstitute-ide.net',
@@ -41,7 +41,6 @@ CSRF_TRUSTED_ORIGINS = [
     'https://*.codeinstitute-ide.net',
     'https://*.herokuapp.com',
 ]
-
 
 # Application definition
 
