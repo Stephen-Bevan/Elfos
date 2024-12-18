@@ -1,0 +1,16 @@
+h1 {
+    color: red;
+    }
+    /* Wrapper for Page */
+body {
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Stack elements vertically */
+    min-height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
+}
+
+
+.container {
+   
+    flex-grow: 1; /* Allow container to expand */
+}
