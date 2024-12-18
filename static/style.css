@@ -14,3 +14,57 @@ body {
    
     flex-grow: 1; /* Allow container to expand */
 }
+body {
+    background: url('/static/images/christmas-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+}
+
+.navbar {
+    background-color: #228B22;
+}
+
+.navbar-brand {
+    font-family: 'Brush Script MT', cursive;
+    color: #FFD700 !important;
+}
+
+.form-section {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.btn-primary {
+    background-color: #FF4500;
+    border-color: #FF4500;
+}
+
+.btn-primary:hover {
+    background-color: #DC143C;
+    border-color: #DC143C;
+}
+
+footer {
+    background-color: #228B22;
+    color: #FFD700;
+}
+
+footer a {
+    color: #FFD700;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #FF4500;
+}
+
+h2 {
+    font-family: 'Brush Script MT', cursive;
+}
+
+#form label {
+    color: #228B22;
+    font-weight: bold;
+}

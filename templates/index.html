@@ -1,5 +1,22 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1>HO HO HO</h1>
+  <div class="container">
+    <h1>Letter Details</h1>
+
+    <div class="letter-details">
+      <p><strong>Name:</strong> {{ letter.name }}</p>
+      <p><strong>Title:</strong> {{ letter.title }}</p>
+      <p><strong>Creation Date:</strong> {{ letter.creation_date }}</p>
+      <p><strong>Text:</strong></p>
+      <p>{{ letter.text }}</p>
+    </div>
+
+    <hr>
+    <div class="user-details">
+      <p><strong>Written by:</strong> {{ letter.user.username }}</p>
+    </div>
+
+    <a href="{% url 'letter_list' %}" class="btn btn-primary">Back to Letters</a>
+  </div>
 {% endblock %}
