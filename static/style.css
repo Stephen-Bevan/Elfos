@@ -131,3 +131,11 @@ footer {
     color: red !important;
     text-align: center !important;
 }
+
+/* congrats section */
+#congrats {
+    border: 1px solid red;
+    margin-top: 5rem !important;
+    max-width: 720px;
+    margin: auto;
+}

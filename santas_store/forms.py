@@ -4,9 +4,7 @@ from .models import Letter
 class LetterForm(forms.ModelForm):
     class Meta:
         model = Letter
-        fields = ["name", "title", "text"]
+        fields = ["text"]  # Only include the 'text' field in the form
         widgets = {
-            "name": forms.TextInput(attrs={"class": "form-control", "placeholder": "Your Name"}),
-            "title": forms.TextInput(attrs={"class": "form-control", "placeholder": "Letter Title"}),
             "text": forms.Textarea(attrs={"class": "form-control", "placeholder": "Write your letter here..."}),
         }

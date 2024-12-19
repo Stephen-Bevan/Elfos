@@ -2,11 +2,18 @@
 
 {% block content %}
 
-<body>
-    <h1>Congratulations!</h1>
-    <p>Your letter to Santa has been successfully sent!</p>
-    <a href="#">Write Another Letter</a>
-</body>
-</html>
+    <div id="congrats" class="mt-4 text-center">
+        <br>
+        <br>
+        <br>
+        <h1>Congratulations {{ request.user.username }}!</h1>
+        <p>Your letter to Santa has been successfully sent!</p>
+        <p>Merry Christmas to you and your family, {{ request.user.username }}</p>
+        <p>Your Elfs</p>
+        <a href="{% url 'write_to_santa' %}">Write Another Letter</a>
+        <br>
+        <br>
+        <br>
+    </div>
 
 {% endblock %}
