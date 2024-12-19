@@ -72,6 +72,10 @@ h2 {
 
 
 
+li {
+    list-style-type: none;
+}
+
 .main {
     flex-grow: 1;
 }
@@ -101,6 +105,18 @@ h2 {
 
 #register-btn-main:hover, 
 #login-btn-main:hover {
+    background-color: red !important;
+    color: #aff1ff !important;
+    transition: .1s ease;
+}
+
+.btn-signin, .btn-signup {
+    background-color: #aff1ff !important;
+    color: red !important;
+    font-weight: bold;
+}
+
+.btn-signin:hover, .btn-signup:hover {
     background-color: red !important;
     color: #aff1ff !important;
     transition: .1s ease;

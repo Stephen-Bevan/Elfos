@@ -5,6 +5,8 @@
     <div class="row">
       <div id="hero-image"></div>
 
+      <audio id="song" src="/static/song.mp3" controls autoplay></audio>
+
       <div class="home-buttons">
         {% if user.is_authenticated %}
         <a href="{% url 'letter_list' %}" class="btn btn-primary">Wtite Santa!</a>
