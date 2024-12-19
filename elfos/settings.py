@@ -35,7 +35,7 @@ ALLOWED_HOSTS = [
     '8000-stephenbevan-elfos-m1wo3xb9nv2.ws.codeinstitute-ide.net',
     '8000-stephenbevan-elfos-qmwnni1hxa5.ws.codeinstitute-ide.net',
     '8000-stephenbevan-elfos-vzpa5l47mfb.ws.codeinstitute-ide.net',
-    'elfos-0f68a35bea1e.herokuapp.com'
+    '*.herokuapp.com'
 ]
 
 CSRF_TRUSTED_ORIGINS = [
