@@ -1,8 +1,8 @@
-<nav class="navbar navbar-expand-lg bg-primary navbar-dark high-contrast-navbar">
+<nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
       <!-- Brand Logo -->
       <a class="navbar-brand" href="#">
-        <img src="/static/images/elfos-logo.png" alt="ElfOS Logo" width="30" height="30" class="d-inline-block align-top">
+        <img src="/static/images/elfos-logo.jfif" alt="ElfOS Logo" width="30" height="30" class="d-inline-block align-top">
         ElfOS - North Pole Express
       </a>
   
@@ -24,25 +24,12 @@
         <ul class="navbar-nav ms-auto">
           <!-- Home Link -->
           <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
-          </li>
-  
-          <!-- Santa's Store Link -->
-          <li class="nav-item">
-            <a class="nav-link" href="#">Santa’s Store</a>
+            <a class="nav-link" href="">Home</a>
           </li>
   
           <!-- Write to Santa Link -->
           <li class="nav-item">
-            <a class="nav-link" href="#">Write to Santa</a>
-          </li>
-  
-          <!-- Guests -->
-          <li class="nav-item">
-            <a class="nav-link" href="#">Register</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Login</a>
+            <a class="nav-link" href="{% url 'write_to_santa' %}">Write to Santa</a>
           </li>
 
           {% if user.is_authenticated %}

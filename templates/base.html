@@ -28,24 +28,25 @@
 
     <!-- Display Messages -->
     {% if messages %}
-    <div class="alerts-container">
-        <ul>
-            {% for message in messages %}
-            <li class="alert alert-{{ message.tags }}">{{ message }}</li>
-            {% endfor %}
-        </ul>
+    <div class="container">
+        <div class="row">
+            <div class="alerts-container">
+                <ul>
+                    {% for message in messages %}
+                    <li class="alert alert-{{ message.tags }}">{{ message }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
     </div>
     {% endif %}
 
     <!-- Main Container -->
-    <div class="container">
-        <br>
-        <main>
-            <!-- Dynamic Content Block -->
-            {% block content %}
-            {% endblock %}
-        </main>
-    </div>
+    <main class="main">
+        <!-- Dynamic Content Block -->
+        {% block content %}
+        {% endblock %}
+    </main>
 
     <!-- Footer -->
     {% include 'footer.html' %}
@@ -54,5 +55,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="{% static 'app.js' %}"></script>
   
-
+</body>
 </html>

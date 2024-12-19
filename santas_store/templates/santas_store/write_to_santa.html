@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    
+    <div class="text-center mt-5">
+        <h1>Write Your Letter to Santa</h1>
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn btn-primary">Send Letter</button>
+        </form>
+    </div>
+
+{% endblock %}

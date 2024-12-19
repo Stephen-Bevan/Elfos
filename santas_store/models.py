@@ -11,7 +11,7 @@ class Letter(models.Model):
     title = models.CharField(max_length=100)
     text = models.TextField()
     user = models.ForeignKey(
-        User, on_delete=models.CASCADE, related_name='clients'
+        User, on_delete=models.CASCADE, related_name='letters'
         )
 
     def __str__(self):
