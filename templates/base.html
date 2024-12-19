@@ -28,12 +28,16 @@
 
     <!-- Display Messages -->
     {% if messages %}
-    <div class="alerts-container">
-        <ul>
-            {% for message in messages %}
-            <li class="alert alert-{{ message.tags }}">{{ message }}</li>
-            {% endfor %}
-        </ul>
+    <div class="container">
+        <div class="row">
+            <div class="alerts-container">
+                <ul>
+                    {% for message in messages %}
+                    <li class="alert alert-{{ message.tags }}">{{ message }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
     </div>
     {% endif %}
 
