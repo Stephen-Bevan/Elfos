@@ -17,16 +17,16 @@ body {
 body {
     background: url('/static/images/christmas-background.jpg') no-repeat center center fixed;
     background-size: cover;
-    color: #ffffff;
+    color: red;
 }
 
 .navbar {
-    background-color: #228B22;
+    background-color: #e3f2fd;
 }
 
 .navbar-brand {
     font-family: 'Brush Script MT', cursive;
-    color: #FFD700 !important;
+    color: red !important;
 }
 
 .form-section {
@@ -67,4 +67,62 @@ h2 {
 #form label {
     color: #228B22;
     font-weight: bold;
+}
+
+
+
+
+li {
+    list-style-type: none;
+}
+
+.main {
+    flex-grow: 1;
+}
+
+#hero-image {
+    height: 400px;
+    background-image: url('/static/images/hero-image.jpg');
+    background-position: center -350px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.home-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#register-btn-main, 
+#login-btn-main {
+    margin: 0 20px;
+    background-color: #aff1ff !important;
+    color: red !important;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#register-btn-main:hover, 
+#login-btn-main:hover {
+    background-color: red !important;
+    color: #aff1ff !important;
+    transition: .1s ease;
+}
+
+.btn-signin, .btn-signup {
+    background-color: #aff1ff !important;
+    color: red !important;
+    font-weight: bold;
+}
+
+.btn-signin:hover, .btn-signup:hover {
+    background-color: red !important;
+    color: #aff1ff !important;
+    transition: .1s ease;
+}
+
+footer {
+    color: red !important;
+    text-align: center !important;
 }

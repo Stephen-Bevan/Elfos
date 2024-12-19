@@ -14,3 +14,99 @@ body {
    
     flex-grow: 1; /* Allow container to expand */
 }
+body {
+    background: url('/static/images/christmas-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: red;
+}
+
+.navbar {
+    background-color: #e3f2fd;
+}
+
+.navbar-brand {
+    font-family: 'Brush Script MT', cursive;
+    color: red !important;
+}
+
+.form-section {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.btn-primary {
+    background-color: #FF4500;
+    border-color: #FF4500;
+}
+
+.btn-primary:hover {
+    background-color: #DC143C;
+    border-color: #DC143C;
+}
+
+footer {
+    background-color: #228B22;
+    color: #FFD700;
+}
+
+footer a {
+    color: #FFD700;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #FF4500;
+}
+
+h2 {
+    font-family: 'Brush Script MT', cursive;
+}
+
+#form label {
+    color: #228B22;
+    font-weight: bold;
+}
+
+
+
+
+.main {
+    flex-grow: 1;
+}
+
+#hero-image {
+    height: 400px;
+    background-image: url('/static/images/hero-image.jpg');
+    background-position: center -350px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.home-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#register-btn-main, 
+#login-btn-main {
+    margin: 0 20px;
+    background-color: #aff1ff !important;
+    color: red !important;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#register-btn-main:hover, 
+#login-btn-main:hover {
+    background-color: red !important;
+    color: #aff1ff !important;
+    transition: .1s ease;
+}
+
+footer {
+    color: red !important;
+    text-align: center !important;
+}
