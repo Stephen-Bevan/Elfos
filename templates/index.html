@@ -9,7 +9,9 @@
 
       <div class="home-buttons">
         {% if user.is_authenticated %}
-        <a href="{% url 'letter_list' %}" class="btn btn-primary">Wtite Santa!</a>
+        <a href="{% url 'write_to_santa' %}" class="btn btn-primary">Wtite Santa!</a>
+
+        <a href="{% url 'letter_list' %}" class="btn btn-primary">All Letters</a>
         {% else %}
         <a class="btn btn-primary" id="register-btn-main" 
           href="{% url 'account_signup' %}">Register</a>
@@ -17,7 +19,6 @@
         <a class="btn btn-primary" href="{% url 'account_login' %}"  id="login-btn-main">Login</a>
         {% endif %}
       </div>
-      <!-- <a href="{% url 'letter_list' %}" class="btn btn-primary">Back to Letters</a> -->
     </div>
   </div>
 {% endblock %}
