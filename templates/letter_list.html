@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>All Letters</h1>
+<ul>
+    {% for letter in letters %}
+        <li>
+            <a href="{% url 'letter_detail' letter.pk %}">{{ letter.name }} - {{ letter.title }}</a>
+        </li>
+    {% empty %}
+        <li>No letters available.</li>
+    {% endfor %}
+</ul>
+{% endblock %}

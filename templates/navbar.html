@@ -37,35 +37,6 @@
             <a class="nav-link" href="#">Write to Santa</a>
           </li>
   
-          <!-- Calendar of Events Link -->
-          <li class="nav-item">
-            <a class="nav-link" href="#">Calendar of Events</a>
-          </li>
-  
-          <!-- Gallery Link -->
-          <li class="nav-item">
-            <a class="nav-link" href="#">Gallery</a>
-          </li>
-  
-          <!-- About Link -->
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-  
-          <!-- Authentication Links -->
-          <!-- Logged-in Users -->
-          <li class="nav-item">
-            <a class="nav-link" href="#">My Dashboard</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Sign out</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" tabindex="-1" aria-disabled="true">
-              Username
-            </a>
-          </li>
-  
           <!-- Guests -->
           <li class="nav-item">
             <a class="nav-link" href="#">Register</a>
@@ -73,6 +44,20 @@
           <li class="nav-item">
             <a class="nav-link" href="#">Login</a>
           </li>
+
+          {% if user.is_authenticated %}
+          <li class="nav-item">
+            <a class="nav-link {% if request.path == logout_url %}active{% endif %}" aria-current="page" href="{% url 'account_logout' %}">Logout</a>
+          </li>
+          {% else %}
+          <li class="nav-item">
+            <a class="nav-link {% if request.path == signup_url %}active{% endif %}" aria-current="page"
+              href="{% url 'account_signup' %}">Register</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link {% if request.path == login_url %}active{% endif %}" aria-current="page" href="{% url 'account_login' %}">Login</a>
+          </li>
+          {% endif %}
         </ul>
       </div>
     </div>

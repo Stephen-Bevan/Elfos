@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>{{ letter.title }}</h1>
+<p><strong>Author:</strong> {{ letter.name }}</p>
+<p><strong>Created on:</strong> {{ letter.creation_date }}</p>
+<p><strong>Text:</strong></p>
+<p>{{ letter.text }}</p>
+<a href="{% url 'letter_list' %}">Back to All Letters</a>
+{% endblock %}
