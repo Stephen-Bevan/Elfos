@@ -38,14 +38,12 @@
     {% endif %}
 
     <!-- Main Container -->
-    <div class="container">
-        <br>
-        <main>
-            <!-- Dynamic Content Block -->
-            {% block content %}
-            {% endblock %}
-        </main>
-    </div>
+    <main class="main">
+        <!-- Dynamic Content Block -->
+        {% block content %}
+        {% endblock %}
+
+    </main>
 
     <!-- Footer -->
     {% include 'footer.html' %}
